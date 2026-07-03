@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust - Travel Recommendation App</title>
+    <meta name="description" content="Explore beach destinations, historic temples, and beautiful countries. Discover detailed recommendations and start your journey today.">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo" id="nav-logo">
+                <span>Wander</span>lust
+            </a>
+            
+            <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                <span class="hamburger-icon">&#9776;</span>
+            </button>
+
+            <ul class="nav-links" id="nav-list">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li>
+                    <div class="search-container mobile-show">
+                        <input type="text" class="search-input" id="search-input" placeholder="Search beach, temple, Japan...">
+                        <button class="clear-btn" id="clear-btn" aria-label="Clear Search">&#10006;</button>
+                        <button class="search-btn" id="search-btn">Search</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('images/hero-bg.jpg');">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-tagline">Explore the <span>World</span> with Us</h1>
+                <p class="hero-desc">Discover pristine beaches, sacred temples, and historic countries. Find your next unforgettable getaway with our curated travel recommendations.</p>
+                <a href="#default-recommendations" class="hero-btn">
+                    Start Exploring <span class="arrow-down">&#8595;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results Section (Shown dynamically via JS) -->
+    <section class="section-padding search-results-section" id="search-results-section">
+        <div class="container">
+            <div class="search-results-header">
+                <h2 class="search-results-title">Search Results for <span id="search-query-display">"Query"</span></h2>
+            </div>
+            <div class="destinations-grid" id="search-results-grid">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Default Featured Recommendations (Hidden when search runs, shown by default) -->
+    <section class="section-padding default-recommendations" id="default-recommendations">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Popular Destinations</h2>
+                <p class="section-subtitle">Get inspired by some of the most sought-after travel locations across the globe.</p>
+            </div>
+            
+            <div class="destinations-grid">
+                <!-- Bondi Beach -->
+                <div class="destination-card">
+                    <div class="card-images">
+                        <span class="card-badge">beach</span>
+                        <img src="images/bondi1.jpg" alt="Bondi Beach overview" loading="lazy">
+                        <img src="images/bondi2.jpg" alt="Bondi Beach coastal walk" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Bondi Beach, Australia</h3>
+                        <p class="card-desc">Australia's most famous beach with golden sands, perfect surfing waves, and a vibrant coastal lifestyle. Walk along the scenic clifftop path or enjoy a swim in the ocean pool.</p>
+                        <div class="card-footer">
+                            <span class="card-rating">⭐ 4.8</span>
+                            <a href="#" class="card-link" onclick="event.preventDefault(); alert('Redirecting to booking details for Bondi Beach!');">Explore &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Angkor Wat -->
+                <div class="destination-card">
+                    <div class="card-images">
+                        <span class="card-badge">temple</span>
+                        <img src="images/angkor1.jpg" alt="Angkor Wat reflection pond" loading="lazy">
+                        <img src="images/angkor2.jpg" alt="Angkor Wat tree roots ruins" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Angkor Wat, Cambodia</h3>
+                        <p class="card-desc">The largest religious monument in the world, built in the 12th century. A majestic ancient Khmer stone temple complex surrounded by reflective lotus ponds and lush jungle trees.</p>
+                        <div class="card-footer">
+                            <span class="card-rating">⭐ 4.9</span>
+                            <a href="#" class="card-link" onclick="event.preventDefault(); alert('Redirecting to booking details for Angkor Wat!');">Explore &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Japan -->
+                <div class="destination-card">
+                    <div class="card-images">
+                        <span class="card-badge">country</span>
+                        <img src="images/japan1.jpg" alt="Japanese traditional pagoda" loading="lazy">
+                        <img src="images/japan2.jpg" alt="Tokyo streets night view" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Japan</h3>
+                        <p class="card-desc">An extraordinary land where ancient shrines and wooden temples meet futuristic neon skyscrapers, offering seasonal cherry blossoms, high-speed trains, and world-renowned sushi.</p>
+                        <div class="card-footer">
+                            <span class="card-rating">⭐ 4.9</span>
+                            <a href="#" class="card-link" onclick="event.preventDefault(); alert('Redirecting to booking details for Japan!');">Explore &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3><span>Wander</span>lust</h3>
+                    <p>Connecting curious travelers with extraordinary destinations worldwide. Let us help you curate your next adventure.</p>
+                    <div class="footer-socials">
+                        <a href="#" onclick="event.preventDefault();" aria-label="Facebook">FB</a>
+                        <a href="#" onclick="event.preventDefault();" aria-label="Instagram">IG</a>
+                        <a href="#" onclick="event.preventDefault();" aria-label="Twitter">TW</a>
+                        <a href="#" onclick="event.preventDefault();" aria-label="YouTube">YT</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html?search=beach">Beaches</a></li>
+                        <li><a href="index.html?search=temple">Temples</a></li>
+                        <li><a href="index.html?search=country">Countries</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p style="font-size: 0.9rem; margin-bottom: 16px;">Subscribe to receive handpicked travel deals and destination guides.</p>
+                    <form onsubmit="event.preventDefault(); alert('Subscribed to newsletter!');" style="display: flex; gap: 8px;">
+                        <input type="email" placeholder="Your email" required style="padding: 10px 14px; border: none; border-radius: var(--radius-sm); font-size: 0.9rem; width: 100%;">
+                        <button type="submit" style="background-color: var(--secondary-color); color: var(--text-white); border: none; border-radius: var(--radius-sm); padding: 10px 16px; font-weight: 600; cursor: pointer;">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Wanderlust Travel Agency. All rights reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#" onclick="event.preventDefault();">Privacy Policy</a>
+                    <a href="#" onclick="event.preventDefault();">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Controller -->
+    <script src="js/script.js"></script>
+</body>
+</html>

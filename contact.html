@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Wanderlust</title>
+    <meta name="description" content="Get in touch with the Wanderlust team. Submit your travel queries, ask questions, or find our office location details.">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo" id="nav-logo">
+                <span>Wander</span>lust
+            </a>
+            
+            <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                <span class="hamburger-icon">&#9776;</span>
+            </button>
+
+            <ul class="nav-links" id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+                <li>
+                    <div class="search-container mobile-show">
+                        <input type="text" class="search-input" id="search-input" placeholder="Search beach, temple, Japan...">
+                        <button class="clear-btn" id="clear-btn" aria-label="Clear Search">&#10006;</button>
+                        <button class="search-btn" id="search-btn">Search</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Sub-page Hero -->
+    <section class="about-hero" style="background-image: url('images/hero-bg.jpg');">
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1 style="font-size: 3rem; color: var(--text-white);">Get in Touch</h1>
+            <p style="font-size: 1.2rem; color: rgba(255, 255, 255, 0.9); font-weight: 300;">Have questions or need custom travel recommendations? Reach out to us!</p>
+        </div>
+    </section>
+
+    <!-- Contact Content Layout -->
+    <section class="section-padding" style="background-color: var(--bg-light);">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <!-- Contact Info Panel (Left) -->
+                <div class="contact-info-panel">
+                    <h3 class="contact-info-title">Contact Information</h3>
+                    <p class="contact-info-desc">Feel free to contact us through any of these channels. Our travel advisors are ready to help you plan your next escape.</p>
+                    
+                    <div class="contact-details">
+                        <!-- Email -->
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">&#9993;</div>
+                            <div class="contact-detail-content">
+                                <h4>Email Us</h4>
+                                <p><a href="mailto:info@wanderlusttravel.com" style="color: var(--secondary-color);">info@wanderlusttravel.com</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">&#9742;</div>
+                            <div class="contact-detail-content">
+                                <h4>Call Us</h4>
+                                <p>+1 (800) 555-WAND (9263)</p>
+                            </div>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">&#128205;</div>
+                            <div class="contact-detail-content">
+                                <h4>Office Headquarters</h4>
+                                <p>100 Explorer Avenue, Suite 400<br>San Francisco, CA 94105</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social-links">
+                        <h4>Follow Our Adventures</h4>
+                        <div class="social-icons-row">
+                            <a href="#" onclick="event.preventDefault();">FB</a>
+                            <a href="#" onclick="event.preventDefault();">IG</a>
+                            <a href="#" onclick="event.preventDefault();">TW</a>
+                            <a href="#" onclick="event.preventDefault();">YT</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Card (Right) -->
+                <div class="contact-form-card">
+                    <h3 style="font-size: 1.75rem; margin-bottom: 8px;">Send Us a Message</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 32px;">Fill out the form below and our team will get back to you within 24 hours.</p>
+                    
+                    <form id="travel-contact-form">
+                        <div class="form-group">
+                            <label for="contact-name" class="form-label">Full Name</label>
+                            <input type="text" id="contact-name" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-email" class="form-label">Email Address</label>
+                            <input type="email" id="contact-email" class="form-control" placeholder="john@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-message" class="form-label">Your Message</label>
+                            <textarea id="contact-message" class="form-control" placeholder="Tell us about the destinations you are interested in..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            Send Message &nbsp; &rarr;
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3><span>Wander</span>lust</h3>
+                    <p>Connecting curious travelers with extraordinary destinations worldwide. Let us help you curate your next adventure.</p>
+                    <div class="footer-socials">
+                        <a href="#" onclick="event.preventDefault();" aria-label="Facebook">FB</a>
+                        <a href="#" onclick="event.preventDefault();" aria-label="Instagram">IG</a>
+                        <a href="#" onclick="event.preventDefault();" aria-label="Twitter">TW</a>
+                        <a href="#" onclick="event.preventDefault();" aria-label="YouTube">YT</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html?search=beach">Beaches</a></li>
+                        <li><a href="index.html?search=temple">Temples</a></li>
+                        <li><a href="index.html?search=country">Countries</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p style="font-size: 0.9rem; margin-bottom: 16px;">Subscribe to receive handpicked travel deals and destination guides.</p>
+                    <form onsubmit="event.preventDefault(); alert('Subscribed to newsletter!');" style="display: flex; gap: 8px;">
+                        <input type="email" placeholder="Your email" required style="padding: 10px 14px; border: none; border-radius: var(--radius-sm); font-size: 0.9rem; width: 100%;">
+                        <button type="submit" style="background-color: var(--secondary-color); color: var(--text-white); border: none; border-radius: var(--radius-sm); padding: 10px 16px; font-weight: 600; cursor: pointer;">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Wanderlust Travel Agency. All rights reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#" onclick="event.preventDefault();">Privacy Policy</a>
+                    <a href="#" onclick="event.preventDefault();">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Controller -->
+    <script src="js/script.js"></script>
+</body>
+</html>
